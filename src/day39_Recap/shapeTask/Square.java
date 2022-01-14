@@ -16,7 +16,7 @@ private double side;
     public void setSide(double side) {
         if(side<=0){
             System.err.println("Invalid side"+side);
-            System.exit(0);
+            System.exit(1);
         }
         this.side = side;
     }
@@ -33,6 +33,8 @@ private double side;
     public String toString() {
         return "Square{" +
                 "side=" + side +
+                ", area=" + area() +
+                ", perimeter=" + perimeter() +
                 '}';
     }
 }
