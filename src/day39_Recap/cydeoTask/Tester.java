@@ -7,10 +7,13 @@ public class Tester extends Employee{
     }
 
     public void createTicket(){
-        System.out.println(getName()+" is creating ticket "+getJobTitle());
+        System.out.println(getJobTitle()+" "+getName()+" is creating ticket");
 }
 
-
+    @Override
+    public void work() {
+        System.out.println(getJobTitle()+" "+getName()+" is testing a software ");
+    }
 }
 /*
  3. Create a sub class of Employee named Tester
