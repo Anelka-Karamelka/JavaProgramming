@@ -25,11 +25,7 @@ public class Person {
         return age;
     }
 
-    public void setAge(int age) {
-        if( age < 5 || age > 90){
-            System.err.println("Invalid age");
-            System.exit(1);
-        }
+    public void setAge(int age){
         this.age = age;
     }
 
@@ -38,10 +34,6 @@ public class Person {
     }
 
     public void setGender(char gender) {
-        if( !(gender =='M' || gender == 'F') ){
-            System.err.println("Invalid gender");
-            System.exit(1);
-        }
         this.gender = gender;
     }
 
@@ -49,11 +41,11 @@ public class Person {
         System.out.println(name + " is eating");
     }
 
-    public void drinking() {
+    public void drink() {
         System.out.println(name + " is drinking");
     }
 
-    public void sleeping() {
+    public void sleep() {
         System.out.println(name+" is drinking");
     }
 
