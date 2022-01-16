@@ -8,7 +8,7 @@ public class Developer extends Employee {
     }
 
     public void fixBugs(){
-        System.out.println(jobTitle+" "+name+" is crying");
+        System.out.println(jobTitle+" "+name+" is fixing bugs");
     }
 
 
